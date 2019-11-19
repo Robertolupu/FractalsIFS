@@ -1,17 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="FractalsIFS" Database="" Version="10.0.0">
   <Project Name="ReadWriteAT" Path="ReadWriteAT/ReadWriteAT.project" Active="Yes"/>
-  <Project Name="IFS" Path="IFS/IFS.project"/>
+  <Project Name="IFS" Path="IFS/IFS.project" Active="No"/>
+  <Project Name="nIteracions" Path="nIteracions/nIteracions.project" Active="No"/>
+  <Project Name="iteracionsTolerancia" Path="iteracionsTolerancia/iteracionsTolerancia.project" Active="No"/>
+  <Project Name="IterAffTransformation" Path="IterAffTransformation/IterAffTransformation.project"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
       <Project Name="ReadWriteAT" ConfigName="Debug"/>
       <Project Name="IFS" ConfigName="Debug"/>
+      <Project Name="RL1" ConfigName="Debug"/>
+      <Project Name="Iteracions" ConfigName="Debug"/>
+      <Project Name="nIteracions" ConfigName="Debug"/>
+      <Project Name="iteracionsTolerancia" ConfigName="Debug"/>
+      <Project Name="IterAffTransformation" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
       <Project Name="ReadWriteAT" ConfigName="Release"/>
       <Project Name="IFS" ConfigName="Release"/>
+      <Project Name="RL1" ConfigName="Release"/>
+      <Project Name="Iteracions" ConfigName="Release"/>
+      <Project Name="nIteracions" ConfigName="Release"/>
+      <Project Name="iteracionsTolerancia" ConfigName="Release"/>
+      <Project Name="IterAffTransformation" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

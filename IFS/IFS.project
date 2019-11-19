@@ -1,5 +1,370 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Project Name="IFS" Version="10.0.0" InternalType="Library">
+  <VirtualDirectory Name="Eigen">
+    <VirtualDirectory Name="src">
+      <VirtualDirectory Name="SuperLUSupport">
+        <File Name="Eigen/src/SuperLUSupport/SuperLUSupport.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="Geometry">
+        <File Name="Eigen/src/Geometry/Umeyama.h"/>
+        <File Name="Eigen/src/Geometry/AlignedBox.h"/>
+        <File Name="Eigen/src/Geometry/Transform.h"/>
+        <File Name="Eigen/src/Geometry/EulerAngles.h"/>
+        <File Name="Eigen/src/Geometry/OrthoMethods.h"/>
+        <File Name="Eigen/src/Geometry/RotationBase.h"/>
+        <File Name="Eigen/src/Geometry/ParametrizedLine.h"/>
+        <File Name="Eigen/src/Geometry/Quaternion.h"/>
+        <File Name="Eigen/src/Geometry/Rotation2D.h"/>
+        <File Name="Eigen/src/Geometry/AngleAxis.h"/>
+        <File Name="Eigen/src/Geometry/Hyperplane.h"/>
+        <File Name="Eigen/src/Geometry/Homogeneous.h"/>
+        <File Name="Eigen/src/Geometry/Translation.h"/>
+        <File Name="Eigen/src/Geometry/Scaling.h"/>
+        <VirtualDirectory Name="arch">
+          <File Name="Eigen/src/Geometry/arch/Geometry_SSE.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="misc">
+        <File Name="Eigen/src/misc/RealSvd2x2.h"/>
+        <File Name="Eigen/src/misc/Kernel.h"/>
+        <File Name="Eigen/src/misc/lapacke_mangling.h"/>
+        <File Name="Eigen/src/misc/blas.h"/>
+        <File Name="Eigen/src/misc/Image.h"/>
+        <File Name="Eigen/src/misc/lapack.h"/>
+        <File Name="Eigen/src/misc/lapacke.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="SparseQR">
+        <File Name="Eigen/src/SparseQR/SparseQR.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="IterativeLinearSolvers">
+        <File Name="Eigen/src/IterativeLinearSolvers/SolveWithGuess.h"/>
+        <File Name="Eigen/src/IterativeLinearSolvers/IterativeSolverBase.h"/>
+        <File Name="Eigen/src/IterativeLinearSolvers/IncompleteCholesky.h"/>
+        <File Name="Eigen/src/IterativeLinearSolvers/LeastSquareConjugateGradient.h"/>
+        <File Name="Eigen/src/IterativeLinearSolvers/BiCGSTAB.h"/>
+        <File Name="Eigen/src/IterativeLinearSolvers/IncompleteLUT.h"/>
+        <File Name="Eigen/src/IterativeLinearSolvers/ConjugateGradient.h"/>
+        <File Name="Eigen/src/IterativeLinearSolvers/BasicPreconditioners.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="MetisSupport">
+        <File Name="Eigen/src/MetisSupport/MetisSupport.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="plugins">
+        <File Name="Eigen/src/plugins/BlockMethods.h"/>
+        <File Name="Eigen/src/plugins/ArrayCwiseUnaryOps.h"/>
+        <File Name="Eigen/src/plugins/CommonCwiseBinaryOps.h"/>
+        <File Name="Eigen/src/plugins/CommonCwiseUnaryOps.h"/>
+        <File Name="Eigen/src/plugins/MatrixCwiseUnaryOps.h"/>
+        <File Name="Eigen/src/plugins/ArrayCwiseBinaryOps.h"/>
+        <File Name="Eigen/src/plugins/MatrixCwiseBinaryOps.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="SPQRSupport">
+        <File Name="Eigen/src/SPQRSupport/SuiteSparseQRSupport.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="SparseLU">
+        <File Name="Eigen/src/SparseLU/SparseLU_column_dfs.h"/>
+        <File Name="Eigen/src/SparseLU/SparseLU_gemm_kernel.h"/>
+        <File Name="Eigen/src/SparseLU/SparseLU_SupernodalMatrix.h"/>
+        <File Name="Eigen/src/SparseLU/SparseLU_pivotL.h"/>
+        <File Name="Eigen/src/SparseLU/SparseLU_Structs.h"/>
+        <File Name="Eigen/src/SparseLU/SparseLU_relax_snode.h"/>
+        <File Name="Eigen/src/SparseLU/SparseLU_copy_to_ucol.h"/>
+        <File Name="Eigen/src/SparseLU/SparseLU_column_bmod.h"/>
+        <File Name="Eigen/src/SparseLU/SparseLUImpl.h"/>
+        <File Name="Eigen/src/SparseLU/SparseLU_panel_bmod.h"/>
+        <File Name="Eigen/src/SparseLU/SparseLU_pruneL.h"/>
+        <File Name="Eigen/src/SparseLU/SparseLU_Utils.h"/>
+        <File Name="Eigen/src/SparseLU/SparseLU.h"/>
+        <File Name="Eigen/src/SparseLU/SparseLU_panel_dfs.h"/>
+        <File Name="Eigen/src/SparseLU/SparseLU_heap_relax_snode.h"/>
+        <File Name="Eigen/src/SparseLU/SparseLU_Memory.h"/>
+        <File Name="Eigen/src/SparseLU/SparseLU_kernel_bmod.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="LU">
+        <File Name="Eigen/src/LU/PartialPivLU_LAPACKE.h"/>
+        <File Name="Eigen/src/LU/PartialPivLU.h"/>
+        <File Name="Eigen/src/LU/InverseImpl.h"/>
+        <File Name="Eigen/src/LU/FullPivLU.h"/>
+        <File Name="Eigen/src/LU/Determinant.h"/>
+        <VirtualDirectory Name="arch">
+          <File Name="Eigen/src/LU/arch/Inverse_SSE.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="Core">
+        <File Name="Eigen/src/Core/GenericPacketMath.h"/>
+        <File Name="Eigen/src/Core/ArrayWrapper.h"/>
+        <File Name="Eigen/src/Core/DenseBase.h"/>
+        <File Name="Eigen/src/Core/TriangularMatrix.h"/>
+        <File Name="Eigen/src/Core/CommaInitializer.h"/>
+        <File Name="Eigen/src/Core/SolveTriangular.h"/>
+        <File Name="Eigen/src/Core/Random.h"/>
+        <File Name="Eigen/src/Core/Array.h"/>
+        <File Name="Eigen/src/Core/Visitor.h"/>
+        <File Name="Eigen/src/Core/NumTraits.h"/>
+        <File Name="Eigen/src/Core/Diagonal.h"/>
+        <File Name="Eigen/src/Core/Select.h"/>
+        <File Name="Eigen/src/Core/StableNorm.h"/>
+        <File Name="Eigen/src/Core/ForceAlignedAccess.h"/>
+        <File Name="Eigen/src/Core/Transpositions.h"/>
+        <File Name="Eigen/src/Core/VectorwiseOp.h"/>
+        <File Name="Eigen/src/Core/SelfCwiseBinaryOp.h"/>
+        <File Name="Eigen/src/Core/CoreIterators.h"/>
+        <File Name="Eigen/src/Core/Assign.h"/>
+        <File Name="Eigen/src/Core/PermutationMatrix.h"/>
+        <File Name="Eigen/src/Core/MathFunctions.h"/>
+        <File Name="Eigen/src/Core/Ref.h"/>
+        <File Name="Eigen/src/Core/BooleanRedux.h"/>
+        <File Name="Eigen/src/Core/Product.h"/>
+        <File Name="Eigen/src/Core/Reverse.h"/>
+        <File Name="Eigen/src/Core/CoreEvaluators.h"/>
+        <File Name="Eigen/src/Core/Matrix.h"/>
+        <File Name="Eigen/src/Core/CwiseBinaryOp.h"/>
+        <File Name="Eigen/src/Core/Replicate.h"/>
+        <File Name="Eigen/src/Core/DiagonalMatrix.h"/>
+        <File Name="Eigen/src/Core/CwiseNullaryOp.h"/>
+        <File Name="Eigen/src/Core/CwiseTernaryOp.h"/>
+        <File Name="Eigen/src/Core/EigenBase.h"/>
+        <File Name="Eigen/src/Core/Block.h"/>
+        <File Name="Eigen/src/Core/GlobalFunctions.h"/>
+        <File Name="Eigen/src/Core/Stride.h"/>
+        <File Name="Eigen/src/Core/DiagonalProduct.h"/>
+        <File Name="Eigen/src/Core/CwiseUnaryOp.h"/>
+        <File Name="Eigen/src/Core/MapBase.h"/>
+        <File Name="Eigen/src/Core/ProductEvaluators.h"/>
+        <File Name="Eigen/src/Core/MatrixBase.h"/>
+        <File Name="Eigen/src/Core/Redux.h"/>
+        <File Name="Eigen/src/Core/Solve.h"/>
+        <File Name="Eigen/src/Core/MathFunctionsImpl.h"/>
+        <File Name="Eigen/src/Core/DenseCoeffsBase.h"/>
+        <File Name="Eigen/src/Core/Transpose.h"/>
+        <File Name="Eigen/src/Core/Fuzzy.h"/>
+        <File Name="Eigen/src/Core/NestByValue.h"/>
+        <File Name="Eigen/src/Core/IO.h"/>
+        <File Name="Eigen/src/Core/Inverse.h"/>
+        <File Name="Eigen/src/Core/GeneralProduct.h"/>
+        <File Name="Eigen/src/Core/Dot.h"/>
+        <File Name="Eigen/src/Core/SolverBase.h"/>
+        <File Name="Eigen/src/Core/Assign_MKL.h"/>
+        <File Name="Eigen/src/Core/CwiseUnaryView.h"/>
+        <File Name="Eigen/src/Core/VectorBlock.h"/>
+        <File Name="Eigen/src/Core/NoAlias.h"/>
+        <File Name="Eigen/src/Core/Map.h"/>
+        <File Name="Eigen/src/Core/PlainObjectBase.h"/>
+        <File Name="Eigen/src/Core/ReturnByValue.h"/>
+        <File Name="Eigen/src/Core/BandMatrix.h"/>
+        <File Name="Eigen/src/Core/Swap.h"/>
+        <File Name="Eigen/src/Core/DenseStorage.h"/>
+        <File Name="Eigen/src/Core/ConditionEstimator.h"/>
+        <File Name="Eigen/src/Core/SelfAdjointView.h"/>
+        <File Name="Eigen/src/Core/ArrayBase.h"/>
+        <File Name="Eigen/src/Core/AssignEvaluator.h"/>
+        <VirtualDirectory Name="products">
+          <File Name="Eigen/src/Core/products/GeneralBlockPanelKernel.h"/>
+          <File Name="Eigen/src/Core/products/SelfadjointMatrixVector_BLAS.h"/>
+          <File Name="Eigen/src/Core/products/GeneralMatrixMatrix.h"/>
+          <File Name="Eigen/src/Core/products/SelfadjointProduct.h"/>
+          <File Name="Eigen/src/Core/products/SelfadjointRank2Update.h"/>
+          <File Name="Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h"/>
+          <File Name="Eigen/src/Core/products/Parallelizer.h"/>
+          <File Name="Eigen/src/Core/products/SelfadjointMatrixVector.h"/>
+          <File Name="Eigen/src/Core/products/GeneralMatrixMatrixTriangular_BLAS.h"/>
+          <File Name="Eigen/src/Core/products/SelfadjointMatrixMatrix_BLAS.h"/>
+          <File Name="Eigen/src/Core/products/GeneralMatrixVector_BLAS.h"/>
+          <File Name="Eigen/src/Core/products/TriangularMatrixVector.h"/>
+          <File Name="Eigen/src/Core/products/TriangularMatrixMatrix.h"/>
+          <File Name="Eigen/src/Core/products/TriangularSolverVector.h"/>
+          <File Name="Eigen/src/Core/products/SelfadjointMatrixMatrix.h"/>
+          <File Name="Eigen/src/Core/products/GeneralMatrixVector.h"/>
+          <File Name="Eigen/src/Core/products/GeneralMatrixMatrix_BLAS.h"/>
+          <File Name="Eigen/src/Core/products/TriangularMatrixVector_BLAS.h"/>
+          <File Name="Eigen/src/Core/products/TriangularSolverMatrix.h"/>
+          <File Name="Eigen/src/Core/products/TriangularSolverMatrix_BLAS.h"/>
+          <File Name="Eigen/src/Core/products/TriangularMatrixMatrix_BLAS.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="util">
+          <File Name="Eigen/src/Core/util/DisableStupidWarnings.h"/>
+          <File Name="Eigen/src/Core/util/NonMPL2.h"/>
+          <File Name="Eigen/src/Core/util/XprHelper.h"/>
+          <File Name="Eigen/src/Core/util/MKL_support.h"/>
+          <File Name="Eigen/src/Core/util/ForwardDeclarations.h"/>
+          <File Name="Eigen/src/Core/util/ReenableStupidWarnings.h"/>
+          <File Name="Eigen/src/Core/util/StaticAssert.h"/>
+          <File Name="Eigen/src/Core/util/BlasUtil.h"/>
+          <File Name="Eigen/src/Core/util/Memory.h"/>
+          <File Name="Eigen/src/Core/util/Meta.h"/>
+          <File Name="Eigen/src/Core/util/Constants.h"/>
+          <File Name="Eigen/src/Core/util/Macros.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="functors">
+          <File Name="Eigen/src/Core/functors/UnaryFunctors.h"/>
+          <File Name="Eigen/src/Core/functors/BinaryFunctors.h"/>
+          <File Name="Eigen/src/Core/functors/TernaryFunctors.h"/>
+          <File Name="Eigen/src/Core/functors/StlFunctors.h"/>
+          <File Name="Eigen/src/Core/functors/NullaryFunctors.h"/>
+          <File Name="Eigen/src/Core/functors/AssignmentFunctors.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="arch">
+          <VirtualDirectory Name="NEON">
+            <File Name="Eigen/src/Core/arch/NEON/MathFunctions.h"/>
+            <File Name="Eigen/src/Core/arch/NEON/PacketMath.h"/>
+            <File Name="Eigen/src/Core/arch/NEON/Complex.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="AVX">
+            <File Name="Eigen/src/Core/arch/AVX/TypeCasting.h"/>
+            <File Name="Eigen/src/Core/arch/AVX/MathFunctions.h"/>
+            <File Name="Eigen/src/Core/arch/AVX/PacketMath.h"/>
+            <File Name="Eigen/src/Core/arch/AVX/Complex.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="AVX512">
+            <File Name="Eigen/src/Core/arch/AVX512/MathFunctions.h"/>
+            <File Name="Eigen/src/Core/arch/AVX512/PacketMath.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="SSE">
+            <File Name="Eigen/src/Core/arch/SSE/TypeCasting.h"/>
+            <File Name="Eigen/src/Core/arch/SSE/MathFunctions.h"/>
+            <File Name="Eigen/src/Core/arch/SSE/PacketMath.h"/>
+            <File Name="Eigen/src/Core/arch/SSE/Complex.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="ZVector">
+            <File Name="Eigen/src/Core/arch/ZVector/MathFunctions.h"/>
+            <File Name="Eigen/src/Core/arch/ZVector/PacketMath.h"/>
+            <File Name="Eigen/src/Core/arch/ZVector/Complex.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="Default">
+            <File Name="Eigen/src/Core/arch/Default/ConjHelper.h"/>
+            <File Name="Eigen/src/Core/arch/Default/Settings.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="AltiVec">
+            <File Name="Eigen/src/Core/arch/AltiVec/MathFunctions.h"/>
+            <File Name="Eigen/src/Core/arch/AltiVec/PacketMath.h"/>
+            <File Name="Eigen/src/Core/arch/AltiVec/Complex.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="CUDA">
+            <File Name="Eigen/src/Core/arch/CUDA/TypeCasting.h"/>
+            <File Name="Eigen/src/Core/arch/CUDA/PacketMathHalf.h"/>
+            <File Name="Eigen/src/Core/arch/CUDA/MathFunctions.h"/>
+            <File Name="Eigen/src/Core/arch/CUDA/Half.h"/>
+            <File Name="Eigen/src/Core/arch/CUDA/PacketMath.h"/>
+            <File Name="Eigen/src/Core/arch/CUDA/Complex.h"/>
+          </VirtualDirectory>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="Jacobi">
+        <File Name="Eigen/src/Jacobi/Jacobi.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="PaStiXSupport">
+        <File Name="Eigen/src/PaStiXSupport/PaStiXSupport.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="UmfPackSupport">
+        <File Name="Eigen/src/UmfPackSupport/UmfPackSupport.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="SVD">
+        <File Name="Eigen/src/SVD/JacobiSVD_LAPACKE.h"/>
+        <File Name="Eigen/src/SVD/UpperBidiagonalization.h"/>
+        <File Name="Eigen/src/SVD/BDCSVD.h"/>
+        <File Name="Eigen/src/SVD/JacobiSVD.h"/>
+        <File Name="Eigen/src/SVD/SVDBase.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="OrderingMethods">
+        <File Name="Eigen/src/OrderingMethods/Ordering.h"/>
+        <File Name="Eigen/src/OrderingMethods/Amd.h"/>
+        <File Name="Eigen/src/OrderingMethods/Eigen_Colamd.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="CholmodSupport">
+        <File Name="Eigen/src/CholmodSupport/CholmodSupport.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="QR">
+        <File Name="Eigen/src/QR/HouseholderQR_LAPACKE.h"/>
+        <File Name="Eigen/src/QR/ColPivHouseholderQR.h"/>
+        <File Name="Eigen/src/QR/FullPivHouseholderQR.h"/>
+        <File Name="Eigen/src/QR/HouseholderQR.h"/>
+        <File Name="Eigen/src/QR/ColPivHouseholderQR_LAPACKE.h"/>
+        <File Name="Eigen/src/QR/CompleteOrthogonalDecomposition.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="Eigenvalues">
+        <File Name="Eigen/src/Eigenvalues/Tridiagonalization.h"/>
+        <File Name="Eigen/src/Eigenvalues/EigenSolver.h"/>
+        <File Name="Eigen/src/Eigenvalues/ComplexEigenSolver.h"/>
+        <File Name="Eigen/src/Eigenvalues/SelfAdjointEigenSolver_LAPACKE.h"/>
+        <File Name="Eigen/src/Eigenvalues/ComplexSchur.h"/>
+        <File Name="Eigen/src/Eigenvalues/RealSchur.h"/>
+        <File Name="Eigen/src/Eigenvalues/HessenbergDecomposition.h"/>
+        <File Name="Eigen/src/Eigenvalues/ComplexSchur_LAPACKE.h"/>
+        <File Name="Eigen/src/Eigenvalues/RealQZ.h"/>
+        <File Name="Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h"/>
+        <File Name="Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h"/>
+        <File Name="Eigen/src/Eigenvalues/GeneralizedEigenSolver.h"/>
+        <File Name="Eigen/src/Eigenvalues/RealSchur_LAPACKE.h"/>
+        <File Name="Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="StlSupport">
+        <File Name="Eigen/src/StlSupport/StdDeque.h"/>
+        <File Name="Eigen/src/StlSupport/StdVector.h"/>
+        <File Name="Eigen/src/StlSupport/StdList.h"/>
+        <File Name="Eigen/src/StlSupport/details.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="SparseCholesky">
+        <File Name="Eigen/src/SparseCholesky/SimplicialCholesky_impl.h"/>
+        <File Name="Eigen/src/SparseCholesky/SimplicialCholesky.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="Householder">
+        <File Name="Eigen/src/Householder/Householder.h"/>
+        <File Name="Eigen/src/Householder/BlockHouseholder.h"/>
+        <File Name="Eigen/src/Householder/HouseholderSequence.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="Cholesky">
+        <File Name="Eigen/src/Cholesky/LDLT.h"/>
+        <File Name="Eigen/src/Cholesky/LLT_LAPACKE.h"/>
+        <File Name="Eigen/src/Cholesky/LLT.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="PardisoSupport">
+        <File Name="Eigen/src/PardisoSupport/PardisoSupport.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="SparseCore">
+        <File Name="Eigen/src/SparseCore/ConservativeSparseSparseProduct.h"/>
+        <File Name="Eigen/src/SparseCore/SparseCompressedBase.h"/>
+        <File Name="Eigen/src/SparseCore/SparseTriangularView.h"/>
+        <File Name="Eigen/src/SparseCore/SparseRedux.h"/>
+        <File Name="Eigen/src/SparseCore/SparseView.h"/>
+        <File Name="Eigen/src/SparseCore/SparseMatrix.h"/>
+        <File Name="Eigen/src/SparseCore/SparseMap.h"/>
+        <File Name="Eigen/src/SparseCore/SparseColEtree.h"/>
+        <File Name="Eigen/src/SparseCore/SparseVector.h"/>
+        <File Name="Eigen/src/SparseCore/SparsePermutation.h"/>
+        <File Name="Eigen/src/SparseCore/SparseBlock.h"/>
+        <File Name="Eigen/src/SparseCore/TriangularSolver.h"/>
+        <File Name="Eigen/src/SparseCore/SparseDiagonalProduct.h"/>
+        <File Name="Eigen/src/SparseCore/SparseMatrixBase.h"/>
+        <File Name="Eigen/src/SparseCore/SparseSelfAdjointView.h"/>
+        <File Name="Eigen/src/SparseCore/SparseFuzzy.h"/>
+        <File Name="Eigen/src/SparseCore/SparseSparseProductWithPruning.h"/>
+        <File Name="Eigen/src/SparseCore/MappedSparseMatrix.h"/>
+        <File Name="Eigen/src/SparseCore/SparseSolverBase.h"/>
+        <File Name="Eigen/src/SparseCore/SparseDot.h"/>
+        <File Name="Eigen/src/SparseCore/SparseRef.h"/>
+        <File Name="Eigen/src/SparseCore/SparseTranspose.h"/>
+        <File Name="Eigen/src/SparseCore/SparseProduct.h"/>
+        <File Name="Eigen/src/SparseCore/SparseAssign.h"/>
+        <File Name="Eigen/src/SparseCore/SparseUtil.h"/>
+        <File Name="Eigen/src/SparseCore/SparseCwiseUnaryOp.h"/>
+        <File Name="Eigen/src/SparseCore/CompressedStorage.h"/>
+        <File Name="Eigen/src/SparseCore/SparseCwiseBinaryOp.h"/>
+        <File Name="Eigen/src/SparseCore/AmbiVector.h"/>
+        <File Name="Eigen/src/SparseCore/SparseDenseProduct.h"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <Plugins>
+    <Plugin Name="qmake">
+      <![CDATA[00010001N0005Debug000000000000]]>
+    </Plugin>
+  </Plugins>
+  <VirtualDirectory Name="src">
+    <File Name="src/transformation.cpp"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="headers">
+    <File Name="headers/transformation.h"/>
+  </VirtualDirectory>
   <Description/>
   <Dependencies/>
   <Settings Type="Static Library">
@@ -18,7 +383,7 @@
       </Compiler>
       <Linker Options="" Required="yes"/>
       <ResourceCompiler Options="" Required="no"/>
-      <General OutputFile="$(IntermediateDirectory)/lib$(ProjectName).a" IntermediateDirectory="./Debug" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <General OutputFile="$(IntermediateDirectory)/Programs/lib$(ProjectName).a" IntermediateDirectory="../Builds" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
       <BuildSystem Name="Default"/>
       <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
         <![CDATA[]]>
