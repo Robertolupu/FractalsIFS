@@ -6,9 +6,13 @@
 
 int main(int argc, char **argv)
 {
-	tAffTransformation t;
-	t.read();
-	cout << t.isContractiveTransformation();
+
+	IFS A;
+	tPoint b,c;
+	A.read();
+	b.read();
+	c=A.calculateAleatoriOrbit(b);
+	
 }
   
 
@@ -17,6 +21,9 @@ int main(int argc, char **argv)
  * Inici:
  * Finals novembre: Cal treballar la definició de transformació afí...
  * 					3) Comprovar que una aplicació és contractiva
+ * 					4) Aplicar una transformació moltes vegades a un punt fins que convergeixi (això permet obtenir el punt fix)
+ * 					**5) Calcular el punt fix d'una aplicació contractiva resolent el sistema
+ * 					**5b) Compondre dues transformacions lineals
  * 
  * 15 desembre
  * 					6) Llegir i escriure la definició d'un IFS

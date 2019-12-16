@@ -6,9 +6,57 @@
 
 int main(int argc, char **argv)
 {
+
+	
 	tAffTransformation t;
+	tPoint p,p1;
 	t.read();
-	cout << t.isContractiveTransformation();
+	t.calculateFixedPoint().write();
+	p.read();
+	int maxIter;
+	float tol,dP;
+	cout << "Nombre màxim d'iteracions:";
+	cin >> maxIter;
+	p1=t.applyToPoint(p);
+	dP=p.distanceWith(p1);
+	cout << ":/n la distancia entre el punt i la primera iteració és:";
+	cout << dP;
+	cout << ":/n Tolerància:";
+	cin >> tol;
+	p=p1;
+	if(tol < dP ){
+		int i=0;
+		for(i<maxIter;dP>tol;){
+			p1=t.applyToPoint(p);
+			dP=p.distanceWith(p1);
+			p=p1;
+			i++;
+		}
+	}
+	if(tol>dP){
+		cout << "Aconseguit/n";
+	} else {
+		cout << "No aconseguit/n";
+	}
+	p.write();
+  //exemple(); // aquesta funció està a la biblioteca
+  
+  //solveSystem();
+  
+  //tAffTransformation t1, t2;
+  //tPoint p1,p2;
+  //tPoint fixedPoint;
+  //t1.read();
+  //p1.read();
+  //p2 = t1.applyToPoint(p1);
+  //t2.read();
+  //t1.write();
+  //p1.write();
+  //p2.write();
+  //fixedPoint = t1.calculateFixedPoint();
+  //fixedPoint.write();
+  //tAffTransformation composicio = tAffTransformation::composeAffTransformation(t1, t2);
+  //composicio.write();
 }
   
 

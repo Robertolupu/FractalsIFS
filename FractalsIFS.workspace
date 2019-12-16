@@ -1,30 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="FractalsIFS" Database="" Version="10.0.0">
-  <Project Name="ReadWriteAT" Path="ReadWriteAT/ReadWriteAT.project" Active="Yes"/>
+  <Project Name="IsContractive" Path="ReadWriteAT/ReadWriteAT.project" Active="No"/>
   <Project Name="IFS" Path="IFS/IFS.project" Active="No"/>
-  <Project Name="nIteracions" Path="nIteracions/nIteracions.project" Active="No"/>
-  <Project Name="iteracionsTolerancia" Path="iteracionsTolerancia/iteracionsTolerancia.project" Active="No"/>
-  <Project Name="IterAffTransformation" Path="IterAffTransformation/IterAffTransformation.project"/>
+  <Project Name="ReadWriteIFS" Path="ReadWriteIFS/ReadWriteIFS.project" Active="Yes"/>
+  <Project Name="applyTransformationnIter" Path="applyTransformationnIter/applyTransformationnIter.project" Active="No"/>
+  <Project Name="applyIterDistance" Path="applyIterDistance/applyIterDistance.project" Active="No"/>
+  <Project Name="IsContractiveIFS" Path="IsContractiveIFS/IsContractiveIFS.project" Active="No"/>
+  <Project Name="AleatoriOrbit" Path="AleatoriOrbit/AleatoriOrbit.project" Active="No"/>
+  <Project Name="5000AleatoriOrbits" Path="5000AleatoriOrbits/5000AleatoriOrbits.project" Active="No"/>
+  <Project Name="ApplynTransformationsNonAleatori" Path="ApplynTransformationsNonAleatori/ApplynTransformationsNonAleatori.project" Active="No"/>
+  <Project Name="PuntsFixosIFS" Path="PuntsFixosIFS/PuntsFixosIFS.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
-      <Project Name="ReadWriteAT" ConfigName="Debug"/>
+      <Project Name="IsContractive" ConfigName="Debug"/>
       <Project Name="IFS" ConfigName="Debug"/>
       <Project Name="RL1" ConfigName="Debug"/>
       <Project Name="Iteracions" ConfigName="Debug"/>
       <Project Name="nIteracions" ConfigName="Debug"/>
-      <Project Name="iteracionsTolerancia" ConfigName="Debug"/>
       <Project Name="IterAffTransformation" ConfigName="Debug"/>
+      <Project Name="ReadWriteIFS" ConfigName="Debug"/>
+      <Project Name="applyTransformationnIter" ConfigName="Debug"/>
+      <Project Name="applyIterDistance" ConfigName="Debug"/>
+      <Project Name="IsContractiveIFS" ConfigName="Debug"/>
+      <Project Name="AleatoriOrbit" ConfigName="Debug"/>
+      <Project Name="5000AleatoriOrbits" ConfigName="Debug"/>
+      <Project Name="ApplynTransformationsNonAleatori" ConfigName="Debug"/>
+      <Project Name="PuntsFixosIFS" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
-      <Project Name="ReadWriteAT" ConfigName="Release"/>
+      <Project Name="IsContractive" ConfigName="Release"/>
       <Project Name="IFS" ConfigName="Release"/>
       <Project Name="RL1" ConfigName="Release"/>
       <Project Name="Iteracions" ConfigName="Release"/>
       <Project Name="nIteracions" ConfigName="Release"/>
-      <Project Name="iteracionsTolerancia" ConfigName="Release"/>
       <Project Name="IterAffTransformation" ConfigName="Release"/>
+      <Project Name="ReadWriteIFS" ConfigName="Release"/>
+      <Project Name="applyTransformationnIter" ConfigName="Release"/>
+      <Project Name="applyIterDistance" ConfigName="Release"/>
+      <Project Name="IsContractiveIFS" ConfigName="Release"/>
+      <Project Name="AleatoriOrbit" ConfigName="Release"/>
+      <Project Name="5000AleatoriOrbits" ConfigName="Release"/>
+      <Project Name="ApplynTransformationsNonAleatori" ConfigName="Release"/>
+      <Project Name="PuntsFixosIFS" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
