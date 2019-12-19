@@ -104,4 +104,7 @@
   <VirtualDirectory Name="src">
     <File Name="main.cpp"/>
   </VirtualDirectory>
+  <Dependencies Name="Debug">
+    <Project Name="IFS"/>
+  </Dependencies>
 </CodeLite_Project>

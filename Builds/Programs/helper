@@ -1,0 +1,2 @@
+ 
+./IsContractiveIFS < ./sierp.txt > output_s1.txt

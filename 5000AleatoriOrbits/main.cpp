@@ -11,7 +11,9 @@ int main(int argc, char **argv)
 	tPoint b;
 	A.read();
 	b.read();
-	for (int i=0;i<5000){
+	srand(time(NULL));
+	//cin num punts i numero iteracions
+	for (int i=0;i<5000;i++){
 		A.calculateAleatoriOrbit(b).write();
 	}
 }

@@ -8,6 +8,8 @@
 using namespace std;
 using namespace Eigen;
 
+extern bool _help_text;
+
 typedef double tElement;
 typedef Matrix<tElement, Dynamic, Dynamic> tMatrixDynamic;
 	//Abrebriem tot el procés de crear una matriu dynamica sota el nom de tMatrixDynamic
@@ -27,13 +29,15 @@ class tPoint {	//Aquí definirem què és un punt i les funcions que es poden fe
 };	
 
 class tAffTransformation {	//Aquí definirem què és una transformació afí
+	public:
 	int dim;	// la dimensió de la transformació
 	tMatrixDynamic matrix;	// la matriu de la transformació
 
-	public: // aquí posarem aquelles funcions que es poden fer amb una transformació afí
+	 // aquí posarem aquelles funcions que es poden fer amb una transformació afí
 			//Estan definides al fitxer transformation.cpp
 	void read();
-	//void read(int dim);
+	void read(int dim);
+	void fillMatrix();
 	void write();
 	tMatrixDynamic getLinealMatrix();
 	tVectorDynamic getTranslationVector();
@@ -45,20 +49,20 @@ class tAffTransformation {	//Aquí definirem què és una transformació afí
 
 class IFS {		//Aquí definirem què és un fractal IFS
 	int dim;	//la dimensió euclidiana en què es treballa
+	public:	
 	int numT;	//el número de transformacions què té
-	public:		
 	vector<tAffTransformation> IFSvector;	//Aquest és el vector en què cada element és una transformació afí
 					//Aquestes són les funcions que es poden fer amb un fractal IFS
 					//Estan definides al fitxer transformation.cpp
 	void read();
 	void write();
 	bool hasContractiveTransformations();
-	tPoint calculateAleatoriOrbit(tPoint p1);
+	tPoint calculateRandomOrbit(tPoint p1);
 	tAffTransformation TransformationOfNTransformations();
-	//vector PeriodicOrbitP1();
-	//vector PeriodicOrbitP2();
-	//vector PeriodicOrbitPn();
-	//vector PeriodicOrbitP1toN();
+	tAffTransformation TransformationOfVTransformations(vector<int> v);
+	void PeriodicOrbitP1();
+	void GetPeriodicOrbits(int period);
+	
 	
 };
 

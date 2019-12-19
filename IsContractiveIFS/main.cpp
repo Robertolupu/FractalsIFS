@@ -6,10 +6,10 @@
 
 int main(int argc, char **argv)
 {
-
+	_help_text = true;
 	IFS a;
 	a.read();
-	a.hasContractiveTransformations();
+	cout << "Totes son contractives? " << a.hasContractiveTransformations() << "\n";
 }  
 
 

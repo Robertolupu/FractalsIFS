@@ -2,14 +2,14 @@
 <CodeLite_Workspace Name="FractalsIFS" Database="" Version="10.0.0">
   <Project Name="IsContractive" Path="ReadWriteAT/ReadWriteAT.project" Active="No"/>
   <Project Name="IFS" Path="IFS/IFS.project" Active="No"/>
-  <Project Name="ReadWriteIFS" Path="ReadWriteIFS/ReadWriteIFS.project" Active="Yes"/>
+  <Project Name="ReadWriteIFS" Path="ReadWriteIFS/ReadWriteIFS.project" Active="No"/>
   <Project Name="applyTransformationnIter" Path="applyTransformationnIter/applyTransformationnIter.project" Active="No"/>
   <Project Name="applyIterDistance" Path="applyIterDistance/applyIterDistance.project" Active="No"/>
   <Project Name="IsContractiveIFS" Path="IsContractiveIFS/IsContractiveIFS.project" Active="No"/>
   <Project Name="AleatoriOrbit" Path="AleatoriOrbit/AleatoriOrbit.project" Active="No"/>
   <Project Name="5000AleatoriOrbits" Path="5000AleatoriOrbits/5000AleatoriOrbits.project" Active="No"/>
   <Project Name="ApplynTransformationsNonAleatori" Path="ApplynTransformationsNonAleatori/ApplynTransformationsNonAleatori.project" Active="No"/>
-  <Project Name="PuntsFixosIFS" Path="PuntsFixosIFS/PuntsFixosIFS.project" Active="No"/>
+  <Project Name="PuntsFixosIFS" Path="PuntsFixosIFS/PuntsFixosIFS.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>

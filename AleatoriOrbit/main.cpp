@@ -11,8 +11,9 @@ int main(int argc, char **argv)
 	tPoint b,c;
 	A.read();
 	b.read();
+	srand(time(NULL));
 	c=A.calculateAleatoriOrbit(b);
-	
+	c.write();
 }
   
 
