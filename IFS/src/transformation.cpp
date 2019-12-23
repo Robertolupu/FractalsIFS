@@ -3,7 +3,7 @@
 #include <ctime>
 #include "../headers/transformation.h"
 
-bool _help_text = true;
+bool _help_text = false;
 
 void tPoint::read(){	//funció per a llegir un punt.
 	if (_help_text) {
@@ -97,9 +97,8 @@ tVectorDynamic tAffTransformation::getTranslationVector() {
 }
 
 bool tAffTransformation::isContractiveTransformation() { 
-	tMatrixDynamic p= this->matrix * this->matrix.transpose();
-	// s'ha d'agafar la part lineal
-	return (p.maxCoeff() < 1); // revise
+	tMatrixDynamic p= this->getLinealMatrix()*this->getLinealMatrix().transpose();
+	return (p.operatorNorm()<1);
 }
 	
 tPoint tAffTransformation::applyToPoint(tPoint point){
@@ -165,9 +164,9 @@ bool IFS::hasContractiveTransformations(){
 	return true;
 }
 
-tPoint IFS::calculateRandomOrbit(tPoint p1){
+tPoint IFS::calculateRandomOrbit(tPoint p1,int iter){
 	tPoint p=p1;
-	for (int i=0;i<1000;i++){
+	for (int i=0;i<iter;i++){
 		p=IFSvector[rand()%numT].applyToPoint(p);
 	}
 	return p;
@@ -186,9 +185,12 @@ tAffTransformation IFS::TransformationOfNTransformations(){
 }
 
 tAffTransformation IFS::TransformationOfVTransformations(vector<int> v){
-	tAffTransformation t= this->IFSvector[0];
+	tAffTransformation t;
+	t.matrix= this->IFSvector[v[0]].matrix;
+	t.dim=this->IFSvector[0].dim;
 	for(int i=1;i<v.size();i++){
-		t= tAffTransformation::composeAffTransformation(t,this->IFSvector[i]);
+		if(_help_text) cout << t.dim << " " << this->IFSvector[i].dim << "\n";
+		t= tAffTransformation::composeAffTransformation(t,this->IFSvector[v[i]]);
 	}
 	return t;
 }
@@ -203,23 +205,29 @@ void IFS::PeriodicOrbitP1(){
 
 void IFS::GetPeriodicOrbits(int period){
 	int p=2;
-	bool igualtat=false;
-	vector<int> transNums,last;
+	vector<int> transNums,last,transNumsCopy;
+	bool repeatedVector = false;
 	transNums.resize(period,0);
-	last.resize(period,numT-1);
+	last.resize(period,this->numT-1);
 	do{
 		for(int i=0;i<this->numT;i++){
-			for (vector<int>::const_iterator i = transNums.begin(); i != transNums.end(); ++i)
-				std::cout << *i << ' ';
-			cout << "\n";
+			//for (vector<int>::const_iterator i = transNums.begin(); i != transNums.end(); ++i)
+				//std::cout << *i << ' ';
+			//cout << "\n";
 			//comprovar si el periode es correcte i que no es repeteixi
-			
+			repeatedVector=false;
+			transNumsCopy=transNums;
+			for(int r=1;r<transNums.size();r++){
+				for(int i=0;i<transNums.size()-1;i++){
+					swap(transNumsCopy[i],transNumsCopy[transNums.size()-1]);
+				}
+				if(repeatedVector==false)repeatedVector=(transNums==transNumsCopy);
+			}
 			//calcular orbita periodica sencera asociada a transNums i escrigui els punts
-			//this->funcioAmb Nom Nou(transNums);
+			if(!repeatedVector)this->TransformationOfVTransformations(transNums).calculateFixedPoint().write();
 			if(transNums==last) return;
 			transNums[period-1]++;
 		}
-		if(transNums==last) return;
 		transNums[period-1]=0;
 		if(transNums[period-p]==this->numT-1){
 			do{

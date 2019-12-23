@@ -10,6 +10,7 @@
   <Project Name="5000AleatoriOrbits" Path="5000AleatoriOrbits/5000AleatoriOrbits.project" Active="No"/>
   <Project Name="ApplynTransformationsNonAleatori" Path="ApplynTransformationsNonAleatori/ApplynTransformationsNonAleatori.project" Active="No"/>
   <Project Name="PuntsFixosIFS" Path="PuntsFixosIFS/PuntsFixosIFS.project" Active="Yes"/>
+  <Project Name="FixedPointsIFS" Path="FixedPointsIFS/FixedPointsIFS.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -27,6 +28,7 @@
       <Project Name="5000AleatoriOrbits" ConfigName="Debug"/>
       <Project Name="ApplynTransformationsNonAleatori" ConfigName="Debug"/>
       <Project Name="PuntsFixosIFS" ConfigName="Debug"/>
+      <Project Name="FixedPointsIFS" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -44,6 +46,7 @@
       <Project Name="5000AleatoriOrbits" ConfigName="Release"/>
       <Project Name="ApplynTransformationsNonAleatori" ConfigName="Release"/>
       <Project Name="PuntsFixosIFS" ConfigName="Release"/>
+      <Project Name="FixedPointsIFS" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

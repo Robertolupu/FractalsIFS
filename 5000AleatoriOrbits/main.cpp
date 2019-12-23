@@ -6,15 +6,16 @@
 
 int main(int argc, char **argv)
 {
-
 	IFS A;
 	tPoint b;
+	int iter, nPoints;
 	A.read();
 	b.read();
 	srand(time(NULL));
-	//cin num punts i numero iteracions
-	for (int i=0;i<5000;i++){
-		A.calculateAleatoriOrbit(b).write();
+	cin >> nPoints;
+	cin >> iter;
+	for (int i=0;i<nPoints;i++){
+		A.calculateRandomOrbit(b,iter).write();
 	}
 }
   

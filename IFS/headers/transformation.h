@@ -48,8 +48,8 @@ class tAffTransformation {	//Aquí definirem què és una transformació afí
 };
 
 class IFS {		//Aquí definirem què és un fractal IFS
+	public:
 	int dim;	//la dimensió euclidiana en què es treballa
-	public:	
 	int numT;	//el número de transformacions què té
 	vector<tAffTransformation> IFSvector;	//Aquest és el vector en què cada element és una transformació afí
 					//Aquestes són les funcions que es poden fer amb un fractal IFS
@@ -57,7 +57,7 @@ class IFS {		//Aquí definirem què és un fractal IFS
 	void read();
 	void write();
 	bool hasContractiveTransformations();
-	tPoint calculateRandomOrbit(tPoint p1);
+	tPoint calculateRandomOrbit(tPoint p1, int iter);
 	tAffTransformation TransformationOfNTransformations();
 	tAffTransformation TransformationOfVTransformations(vector<int> v);
 	void PeriodicOrbitP1();

@@ -6,9 +6,14 @@
 
 int main(int argc, char **argv)
 {
-	IFS a:
+	IFS a;
 	a.read();
-	a.TransformationOfNTransformations();
+	vector<int> v;
+	int nTrans;
+	cin >> nTrans;
+	v.resize(nTrans);
+	for(int i=0;i<nTrans;i++) cin >> v[i];
+	a.TransformationOfVTransformations(v).write();
 
 }
   

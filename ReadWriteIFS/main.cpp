@@ -6,7 +6,7 @@
 
 int main(int argc, char **argv)
 {
-	_help_text = true;
+	
 
 	IFS a;
 	a.read();
@@ -15,11 +15,10 @@ int main(int argc, char **argv)
 /**
  * Inici:
  * Finals novembre: Cal treballar la definició de transformació afí...
- * 					3) Comprovar que una aplicació és contractiva -> pendent
+ * 					3) Comprovar que una aplicació és contractiva -> pendent//creo que ya esta
  * 
  * 15 desembre
- * 					7) Comprovar que l'IFS està format per aplicacions contractives -> pendent
- * 					9) Generar 5000 punts d'un fractal IFS generant òrbites aleatòries de punts inicials aleatoris -<modificar
+ * 					7) Comprovar que l'IFS està format per aplicacions contractives -> pendent//creo que ya esta
  * 					10) Representar la imatge del fractal obtingut en el punt anterior -> info gnuplot per diferents opcions de represemtació
  * 
  * 22 desembre

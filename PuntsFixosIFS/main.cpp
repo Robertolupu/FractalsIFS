@@ -10,6 +10,5 @@ int main(int argc, char **argv)
 	a.read();	
 	int period;
 	cin >> period;
-
-	a.GetPeriodicOrbits(period);
+	for(int i=1;i<=period;i++) a.GetPeriodicOrbits(i);
 }

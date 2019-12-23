@@ -8,7 +8,8 @@ int main(int argc, char **argv)
 {
 	tAffTransformation t;
 	t.read();
-	cout << t.isContractiveTransformation();
+	cout << t.isContractiveTransformation() << endl;
+	t.write();
 }
   
 
