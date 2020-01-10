@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Roberto
-Date                   :=16/12/19
+Date                   :=09/01/20
 CodeLitePath           :=/home/roberto/.codelite
 LinkerName             :=g++
 SharedObjectLinkerName :=g++ -shared -fPIC
@@ -59,7 +59,6 @@ AS       := as
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=/usr/share/codelite
 Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) 
 
 

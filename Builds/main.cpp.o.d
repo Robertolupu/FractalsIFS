@@ -1,4 +1,4 @@
-../Builds/main.cpp.o: main.cpp ../IFS/headers/transformation.h \
+../Builds/main.cpp.o: main.cpp ../IFS/headers/ifs.h \
  ../IFS/headers/../Eigen/Dense ../IFS/headers/../Eigen/Core \
  ../IFS/headers/../Eigen/src/Core/util/DisableStupidWarnings.h \
  ../IFS/headers/../Eigen/src/Core/util/Macros.h \
@@ -112,6 +112,15 @@
  ../IFS/headers/../Eigen/src/Core/ArrayWrapper.h \
  ../IFS/headers/../Eigen/src/Core/GlobalFunctions.h \
  ../IFS/headers/../Eigen/src/Core/util/ReenableStupidWarnings.h \
+ ../IFS/headers/../Eigen/Eigenvalues ../IFS/headers/../Eigen/Cholesky \
+ ../IFS/headers/../Eigen/Jacobi \
+ ../IFS/headers/../Eigen/src/Jacobi/Jacobi.h \
+ ../IFS/headers/../Eigen/src/Cholesky/LLT.h \
+ ../IFS/headers/../Eigen/src/Cholesky/LDLT.h \
+ ../IFS/headers/../Eigen/Householder \
+ ../IFS/headers/../Eigen/src/Householder/Householder.h \
+ ../IFS/headers/../Eigen/src/Householder/HouseholderSequence.h \
+ ../IFS/headers/../Eigen/src/Householder/BlockHouseholder.h \
  ../IFS/headers/../Eigen/LU ../IFS/headers/../Eigen/src/misc/Kernel.h \
  ../IFS/headers/../Eigen/src/misc/Image.h \
  ../IFS/headers/../Eigen/src/LU/FullPivLU.h \
@@ -119,25 +128,17 @@
  ../IFS/headers/../Eigen/src/LU/Determinant.h \
  ../IFS/headers/../Eigen/src/LU/InverseImpl.h \
  ../IFS/headers/../Eigen/src/LU/arch/Inverse_SSE.h \
- ../IFS/headers/../Eigen/Cholesky ../IFS/headers/../Eigen/Jacobi \
- ../IFS/headers/../Eigen/src/Jacobi/Jacobi.h \
- ../IFS/headers/../Eigen/src/Cholesky/LLT.h \
- ../IFS/headers/../Eigen/src/Cholesky/LDLT.h ../IFS/headers/../Eigen/QR \
- ../IFS/headers/../Eigen/Householder \
- ../IFS/headers/../Eigen/src/Householder/Householder.h \
- ../IFS/headers/../Eigen/src/Householder/HouseholderSequence.h \
- ../IFS/headers/../Eigen/src/Householder/BlockHouseholder.h \
+ ../IFS/headers/../Eigen/Geometry ../IFS/headers/../Eigen/SVD \
+ ../IFS/headers/../Eigen/QR \
  ../IFS/headers/../Eigen/src/QR/HouseholderQR.h \
  ../IFS/headers/../Eigen/src/QR/FullPivHouseholderQR.h \
  ../IFS/headers/../Eigen/src/QR/ColPivHouseholderQR.h \
  ../IFS/headers/../Eigen/src/QR/CompleteOrthogonalDecomposition.h \
- ../IFS/headers/../Eigen/SVD \
  ../IFS/headers/../Eigen/src/misc/RealSvd2x2.h \
  ../IFS/headers/../Eigen/src/SVD/UpperBidiagonalization.h \
  ../IFS/headers/../Eigen/src/SVD/SVDBase.h \
  ../IFS/headers/../Eigen/src/SVD/JacobiSVD.h \
  ../IFS/headers/../Eigen/src/SVD/BDCSVD.h \
- ../IFS/headers/../Eigen/Geometry \
  ../IFS/headers/../Eigen/src/Geometry/OrthoMethods.h \
  ../IFS/headers/../Eigen/src/Geometry/EulerAngles.h \
  ../IFS/headers/../Eigen/src/Geometry/Homogeneous.h \
@@ -153,7 +154,6 @@
  ../IFS/headers/../Eigen/src/Geometry/AlignedBox.h \
  ../IFS/headers/../Eigen/src/Geometry/Umeyama.h \
  ../IFS/headers/../Eigen/src/Geometry/arch/Geometry_SSE.h \
- ../IFS/headers/../Eigen/Eigenvalues \
  ../IFS/headers/../Eigen/src/Eigenvalues/Tridiagonalization.h \
  ../IFS/headers/../Eigen/src/Eigenvalues/RealSchur.h \
  ../IFS/headers/../Eigen/src/Eigenvalues/./HessenbergDecomposition.h \
@@ -171,7 +171,7 @@
  ../IFS/headers/../Eigen/src/Eigenvalues/./RealQZ.h \
  ../IFS/headers/../Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
 
-../IFS/headers/transformation.h:
+../IFS/headers/ifs.h:
 
 ../IFS/headers/../Eigen/Dense:
 
@@ -401,6 +401,26 @@
 
 ../IFS/headers/../Eigen/src/Core/util/ReenableStupidWarnings.h:
 
+../IFS/headers/../Eigen/Eigenvalues:
+
+../IFS/headers/../Eigen/Cholesky:
+
+../IFS/headers/../Eigen/Jacobi:
+
+../IFS/headers/../Eigen/src/Jacobi/Jacobi.h:
+
+../IFS/headers/../Eigen/src/Cholesky/LLT.h:
+
+../IFS/headers/../Eigen/src/Cholesky/LDLT.h:
+
+../IFS/headers/../Eigen/Householder:
+
+../IFS/headers/../Eigen/src/Householder/Householder.h:
+
+../IFS/headers/../Eigen/src/Householder/HouseholderSequence.h:
+
+../IFS/headers/../Eigen/src/Householder/BlockHouseholder.h:
+
 ../IFS/headers/../Eigen/LU:
 
 ../IFS/headers/../Eigen/src/misc/Kernel.h:
@@ -417,25 +437,11 @@
 
 ../IFS/headers/../Eigen/src/LU/arch/Inverse_SSE.h:
 
-../IFS/headers/../Eigen/Cholesky:
+../IFS/headers/../Eigen/Geometry:
 
-../IFS/headers/../Eigen/Jacobi:
-
-../IFS/headers/../Eigen/src/Jacobi/Jacobi.h:
-
-../IFS/headers/../Eigen/src/Cholesky/LLT.h:
-
-../IFS/headers/../Eigen/src/Cholesky/LDLT.h:
+../IFS/headers/../Eigen/SVD:
 
 ../IFS/headers/../Eigen/QR:
-
-../IFS/headers/../Eigen/Householder:
-
-../IFS/headers/../Eigen/src/Householder/Householder.h:
-
-../IFS/headers/../Eigen/src/Householder/HouseholderSequence.h:
-
-../IFS/headers/../Eigen/src/Householder/BlockHouseholder.h:
 
 ../IFS/headers/../Eigen/src/QR/HouseholderQR.h:
 
@@ -444,8 +450,6 @@
 ../IFS/headers/../Eigen/src/QR/ColPivHouseholderQR.h:
 
 ../IFS/headers/../Eigen/src/QR/CompleteOrthogonalDecomposition.h:
-
-../IFS/headers/../Eigen/SVD:
 
 ../IFS/headers/../Eigen/src/misc/RealSvd2x2.h:
 
@@ -456,8 +460,6 @@
 ../IFS/headers/../Eigen/src/SVD/JacobiSVD.h:
 
 ../IFS/headers/../Eigen/src/SVD/BDCSVD.h:
-
-../IFS/headers/../Eigen/Geometry:
 
 ../IFS/headers/../Eigen/src/Geometry/OrthoMethods.h:
 
@@ -488,8 +490,6 @@
 ../IFS/headers/../Eigen/src/Geometry/Umeyama.h:
 
 ../IFS/headers/../Eigen/src/Geometry/arch/Geometry_SSE.h:
-
-../IFS/headers/../Eigen/Eigenvalues:
 
 ../IFS/headers/../Eigen/src/Eigenvalues/Tridiagonalization.h:
 

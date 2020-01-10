@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // Incloem les capçaleres que necessitem de la biblioteca
-#include "../IFS/headers/transformation.h"
+#include "../IFS/headers/ifs.h"
 #include <iostream>
 
 int main(int argc, char **argv)
@@ -25,8 +25,7 @@ int main(int argc, char **argv)
 	cin >> tol;
 	p=p1;
 	if(tol < dP ){
-		int i=0;
-		for(i<maxIter;dP>tol;){
+		for(int i=0;i < maxIter && dP>tol;){
 			p1=t.applyToPoint(p);
 			dP=p.distanceWith(p1);
 			p=p1;

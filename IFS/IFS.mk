@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Roberto
-Date                   :=22/12/19
+Date                   :=09/01/20
 CodeLitePath           :=/home/roberto/.codelite
 LinkerName             :=g++
 SharedObjectLinkerName :=g++ -shared -fPIC
@@ -59,8 +59,7 @@ AS       := as
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=/usr/share/codelite
-Objects0=$(IntermediateDirectory)/src_transformation.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/src_ifs.cpp$(ObjectSuffix) 
 
 
 
@@ -93,13 +92,13 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/src_transformation.cpp$(ObjectSuffix): src/transformation.cpp $(IntermediateDirectory)/src_transformation.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/roberto/Documents/FractalsIFS/IFS/src/transformation.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/src_transformation.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/src_transformation.cpp$(DependSuffix): src/transformation.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/src_transformation.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/src_transformation.cpp$(DependSuffix) -MM src/transformation.cpp
+$(IntermediateDirectory)/src_ifs.cpp$(ObjectSuffix): src/ifs.cpp $(IntermediateDirectory)/src_ifs.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/roberto/Documents/FractalsIFS/IFS/src/ifs.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/src_ifs.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/src_ifs.cpp$(DependSuffix): src/ifs.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/src_ifs.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/src_ifs.cpp$(DependSuffix) -MM src/ifs.cpp
 
-$(IntermediateDirectory)/src_transformation.cpp$(PreprocessSuffix): src/transformation.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/src_transformation.cpp$(PreprocessSuffix) src/transformation.cpp
+$(IntermediateDirectory)/src_ifs.cpp$(PreprocessSuffix): src/ifs.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/src_ifs.cpp$(PreprocessSuffix) src/ifs.cpp
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

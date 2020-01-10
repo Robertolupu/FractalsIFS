@@ -1,27 +1,21 @@
 #include <stdio.h>
 
 // Incloem les capçaleres que necessitem de la biblioteca
-#include "../IFS/headers/transformation.h"
+#include "../IFS/headers/ifs.h"
 #include <iostream>
 
 int main(int argc, char **argv)
 {
-	vector<int> v,v1;
+	vector<int> transNums;
+	int a;
 	bool repeatedVector=false;
-	int n;
-	cin >> n;
-	v.resize(n);
-	for(int i =0;i<v.size();i++){
-		cin >> v[i];
-	}
-	v1=v;
-	for(int r=1;r<v.size();r++){
-		for(int i=0;i<v.size()-1;i++){
-			swap(v1[i],v1[v.size()-1]);
-		}
-		if(repeatedVector==false)repeatedVector=(v==v1);
-	}
-	cout << repeatedVector;
+	cin >> a;
+	transNums.resize(a);
+	for(int i=0;i<a;i++)
+		cin >> transNums[i];
+	IFS b;
+	b.read();
+	b.GetPeriodicOrbit(transNums);
 }
 
 

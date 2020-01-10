@@ -6,6 +6,36 @@
     </Plugin>
   </Plugins>
   <VirtualDirectory Name="Eigen">
+    <File Name="Eigen/UmfPackSupport"/>
+    <File Name="Eigen/SVD"/>
+    <File Name="Eigen/SuperLUSupport"/>
+    <File Name="Eigen/StdVector"/>
+    <File Name="Eigen/StdList"/>
+    <File Name="Eigen/StdDeque"/>
+    <File Name="Eigen/SPQRSupport"/>
+    <File Name="Eigen/SparseQR"/>
+    <File Name="Eigen/SparseLU"/>
+    <File Name="Eigen/SparseCore"/>
+    <File Name="Eigen/SparseCholesky"/>
+    <File Name="Eigen/Sparse"/>
+    <File Name="Eigen/QtAlignedMalloc"/>
+    <File Name="Eigen/QR"/>
+    <File Name="Eigen/PaStiXSupport"/>
+    <File Name="Eigen/PardisoSupport"/>
+    <File Name="Eigen/OrderingMethods"/>
+    <File Name="Eigen/MetisSupport"/>
+    <File Name="Eigen/LU"/>
+    <File Name="Eigen/Jacobi"/>
+    <File Name="Eigen/IterativeLinearSolvers"/>
+    <File Name="Eigen/Householder"/>
+    <File Name="Eigen/Geometry"/>
+    <File Name="Eigen/Eigenvalues"/>
+    <File Name="Eigen/Eigen"/>
+    <File Name="Eigen/Dense"/>
+    <File Name="Eigen/Core"/>
+    <File Name="Eigen/CMakeLists.txt"/>
+    <File Name="Eigen/CholmodSupport"/>
+    <File Name="Eigen/Cholesky"/>
     <VirtualDirectory Name="src">
       <VirtualDirectory Name="SuperLUSupport">
         <File Name="Eigen/src/SuperLUSupport/SuperLUSupport.h"/>
@@ -360,10 +390,10 @@
     </VirtualDirectory>
   </VirtualDirectory>
   <VirtualDirectory Name="src">
-    <File Name="src/transformation.cpp"/>
+    <File Name="src/ifs.cpp"/>
   </VirtualDirectory>
   <VirtualDirectory Name="headers">
-    <File Name="headers/transformation.h"/>
+    <File Name="headers/ifs.h"/>
   </VirtualDirectory>
   <Description/>
   <Dependencies/>

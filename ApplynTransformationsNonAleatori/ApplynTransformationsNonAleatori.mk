@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Roberto
-Date                   :=21/12/19
+Date                   :=09/01/20
 CodeLitePath           :=/home/roberto/.codelite
 LinkerName             :=g++
 SharedObjectLinkerName :=g++ -shared -fPIC
@@ -59,7 +59,6 @@ AS       := as
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=/usr/share/codelite
 Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) 
 
 
@@ -72,18 +71,11 @@ Objects=$(Objects0)
 .PHONY: all clean PreBuild PrePreBuild PostBuild MakeIntermediateDirs
 all: $(OutputFile)
 
-$(OutputFile): $(IntermediateDirectory)/.d "../.build-debug/IFS" $(Objects) 
+$(OutputFile): $(IntermediateDirectory)/.d $(Objects) 
 	@$(MakeDirCommand) $(@D)
 	@echo "" > $(IntermediateDirectory)/.d
 	@echo $(Objects0)  > $(ObjectsFileList)
 	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
-
-"../.build-debug/IFS":
-	@$(MakeDirCommand) "../.build-debug"
-	@echo stam > "../.build-debug/IFS"
-
-
-
 
 MakeIntermediateDirs:
 	@test -d ../Builds || $(MakeDirCommand) ../Builds
