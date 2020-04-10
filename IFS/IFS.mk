@@ -5,22 +5,22 @@
 ## Debug
 ProjectName            :=IFS
 ConfigurationName      :=Debug
-WorkspacePath          :=/home/roberto/Documents/FractalsIFS
-ProjectPath            :=/home/roberto/Documents/FractalsIFS/IFS
+WorkspacePath          :=C:/Users/Usuario/Documents/GitHub/FractalsIFS
+ProjectPath            :=C:/Users/Usuario/Documents/GitHub/FractalsIFS/IFS
 IntermediateDirectory  :=../Builds
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=Roberto
-Date                   :=09/01/20
-CodeLitePath           :=/home/roberto/.codelite
-LinkerName             :=g++
-SharedObjectLinkerName :=g++ -shared -fPIC
+User                   :=Usuario
+Date                   :=04/02/2020
+CodeLitePath           :="C:/Program Files/CodeLite"
+LinkerName             :=C:/MinGW/bin/g++.exe
+SharedObjectLinkerName :=C:/MinGW/bin/g++.exe -shared -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
-PreprocessSuffix       :=.o.i
-DebugSwitch            :=-gstab
+PreprocessSuffix       :=.i
+DebugSwitch            :=-g 
 IncludeSwitch          :=-I
 LibrarySwitch          :=-l
 OutputSwitch           :=-o 
@@ -31,10 +31,12 @@ OutputFile             :=$(IntermediateDirectory)/Programs/lib$(ProjectName).a
 Preprocessors          :=
 ObjectSwitch           :=-o 
 ArchiveOutputSwitch    := 
-PreprocessOnlySwitch   :=-E 
+PreprocessOnlySwitch   :=-E
 ObjectsFileList        :="IFS.txt"
 PCHCompileFlags        :=
-MakeDirCommand         :=mkdir -p
+MakeDirCommand         :=makedir
+RcCmpOptions           := 
+RcCompilerName         :=C:/MinGW/bin/windres.exe
 LinkOptions            :=  
 IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
@@ -47,18 +49,19 @@ LibPath                := $(LibraryPathSwitch).
 ## Common variables
 ## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
 ##
-AR       := ar rcus
-CXX      := g++
-CC       := gcc
+AR       := C:/MinGW/bin/ar.exe rcu
+CXX      := C:/MinGW/bin/g++.exe
+CC       := C:/MinGW/bin/gcc.exe
 CXXFLAGS :=  -g $(Preprocessors)
 CFLAGS   :=  -g $(Preprocessors)
 ASFLAGS  := 
-AS       := as
+AS       := C:/MinGW/bin/as.exe
 
 
 ##
 ## User defined environment variables
 ##
+CodeLiteDir:=C:\Program Files\CodeLite
 Objects0=$(IntermediateDirectory)/src_ifs.cpp$(ObjectSuffix) 
 
 
@@ -76,15 +79,15 @@ $(OutputFile): $(Objects)
 	@echo "" > $(IntermediateDirectory)/.d
 	@echo $(Objects0)  > $(ObjectsFileList)
 	$(AR) $(ArchiveOutputSwitch)$(OutputFile) @$(ObjectsFileList) $(ArLibs)
-	@$(MakeDirCommand) "/home/roberto/Documents/FractalsIFS/.build-debug"
-	@echo rebuilt > "/home/roberto/Documents/FractalsIFS/.build-debug/IFS"
+	@$(MakeDirCommand) "C:\Users\Usuario\Documents\GitHub\FractalsIFS/.build-debug"
+	@echo rebuilt > "C:\Users\Usuario\Documents\GitHub\FractalsIFS/.build-debug/IFS"
 
 MakeIntermediateDirs:
-	@test -d ../Builds || $(MakeDirCommand) ../Builds
+	@$(MakeDirCommand) "../Builds"
 
 
 ../Builds:
-	@test -d ../Builds || $(MakeDirCommand) ../Builds
+	@$(MakeDirCommand) "../Builds"
 
 PreBuild:
 
@@ -92,11 +95,9 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/src_ifs.cpp$(ObjectSuffix): src/ifs.cpp $(IntermediateDirectory)/src_ifs.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/roberto/Documents/FractalsIFS/IFS/src/ifs.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/src_ifs.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/src_ifs.cpp$(DependSuffix): src/ifs.cpp
+$(IntermediateDirectory)/src_ifs.cpp$(ObjectSuffix): src/ifs.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/src_ifs.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/src_ifs.cpp$(DependSuffix) -MM src/ifs.cpp
-
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Usuario/Documents/GitHub/FractalsIFS/IFS/src/ifs.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/src_ifs.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/src_ifs.cpp$(PreprocessSuffix): src/ifs.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/src_ifs.cpp$(PreprocessSuffix) src/ifs.cpp
 

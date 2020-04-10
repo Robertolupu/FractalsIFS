@@ -14,10 +14,6 @@
  ../IFS/headers/../Eigen/src/Core/GenericPacketMath.h \
  ../IFS/headers/../Eigen/src/Core/MathFunctionsImpl.h \
  ../IFS/headers/../Eigen/src/Core/arch/Default/ConjHelper.h \
- ../IFS/headers/../Eigen/src/Core/arch/SSE/PacketMath.h \
- ../IFS/headers/../Eigen/src/Core/arch/SSE/MathFunctions.h \
- ../IFS/headers/../Eigen/src/Core/arch/SSE/Complex.h \
- ../IFS/headers/../Eigen/src/Core/arch/SSE/TypeCasting.h \
  ../IFS/headers/../Eigen/src/Core/arch/CUDA/Half.h \
  ../IFS/headers/../Eigen/src/Core/arch/CUDA/PacketMathHalf.h \
  ../IFS/headers/../Eigen/src/Core/arch/CUDA/TypeCasting.h \
@@ -127,7 +123,6 @@
  ../IFS/headers/../Eigen/src/LU/PartialPivLU.h \
  ../IFS/headers/../Eigen/src/LU/Determinant.h \
  ../IFS/headers/../Eigen/src/LU/InverseImpl.h \
- ../IFS/headers/../Eigen/src/LU/arch/Inverse_SSE.h \
  ../IFS/headers/../Eigen/Geometry ../IFS/headers/../Eigen/SVD \
  ../IFS/headers/../Eigen/QR \
  ../IFS/headers/../Eigen/src/QR/HouseholderQR.h \
@@ -153,7 +148,6 @@
  ../IFS/headers/../Eigen/src/Geometry/ParametrizedLine.h \
  ../IFS/headers/../Eigen/src/Geometry/AlignedBox.h \
  ../IFS/headers/../Eigen/src/Geometry/Umeyama.h \
- ../IFS/headers/../Eigen/src/Geometry/arch/Geometry_SSE.h \
  ../IFS/headers/../Eigen/src/Eigenvalues/Tridiagonalization.h \
  ../IFS/headers/../Eigen/src/Eigenvalues/RealSchur.h \
  ../IFS/headers/../Eigen/src/Eigenvalues/./HessenbergDecomposition.h \
@@ -204,14 +198,6 @@
 ../IFS/headers/../Eigen/src/Core/MathFunctionsImpl.h:
 
 ../IFS/headers/../Eigen/src/Core/arch/Default/ConjHelper.h:
-
-../IFS/headers/../Eigen/src/Core/arch/SSE/PacketMath.h:
-
-../IFS/headers/../Eigen/src/Core/arch/SSE/MathFunctions.h:
-
-../IFS/headers/../Eigen/src/Core/arch/SSE/Complex.h:
-
-../IFS/headers/../Eigen/src/Core/arch/SSE/TypeCasting.h:
 
 ../IFS/headers/../Eigen/src/Core/arch/CUDA/Half.h:
 
@@ -435,8 +421,6 @@
 
 ../IFS/headers/../Eigen/src/LU/InverseImpl.h:
 
-../IFS/headers/../Eigen/src/LU/arch/Inverse_SSE.h:
-
 ../IFS/headers/../Eigen/Geometry:
 
 ../IFS/headers/../Eigen/SVD:
@@ -488,8 +472,6 @@
 ../IFS/headers/../Eigen/src/Geometry/AlignedBox.h:
 
 ../IFS/headers/../Eigen/src/Geometry/Umeyama.h:
-
-../IFS/headers/../Eigen/src/Geometry/arch/Geometry_SSE.h:
 
 ../IFS/headers/../Eigen/src/Eigenvalues/Tridiagonalization.h:
 

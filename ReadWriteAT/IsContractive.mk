@@ -3,7 +3,7 @@
 ## any manual changes will be erased      
 ##
 ## Debug
-ProjectName            :=IsContractive
+ProjectName            :=iscontractive
 ConfigurationName      :=Debug
 WorkspacePath          :=/home/roberto/Documents/FractalsIFS
 ProjectPath            :=/home/roberto/Documents/FractalsIFS/ReadWriteAT
@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Roberto
-Date                   :=09/01/20
+Date                   :=13/12/19
 CodeLitePath           :=/home/roberto/.codelite
 LinkerName             :=g++
 SharedObjectLinkerName :=g++ -shared -fPIC
@@ -32,7 +32,7 @@ Preprocessors          :=
 ObjectSwitch           :=-o 
 ArchiveOutputSwitch    := 
 PreprocessOnlySwitch   :=-E 
-ObjectsFileList        :="IsContractive.txt"
+ObjectsFileList        :="iscontractive.txt"
 PCHCompileFlags        :=
 MakeDirCommand         :=mkdir -p
 LinkOptions            :=  
@@ -59,6 +59,7 @@ AS       := as
 ##
 ## User defined environment variables
 ##
+CodeLiteDir:=/usr/share/codelite
 Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) 
 
 
@@ -71,11 +72,18 @@ Objects=$(Objects0)
 .PHONY: all clean PreBuild PrePreBuild PostBuild MakeIntermediateDirs
 all: $(OutputFile)
 
-$(OutputFile): $(IntermediateDirectory)/.d $(Objects) 
+$(OutputFile): $(IntermediateDirectory)/.d "../.build-debug/IFS" $(Objects) 
 	@$(MakeDirCommand) $(@D)
 	@echo "" > $(IntermediateDirectory)/.d
 	@echo $(Objects0)  > $(ObjectsFileList)
 	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
+
+"../.build-debug/IFS":
+	@$(MakeDirCommand) "../.build-debug"
+	@echo stam > "../.build-debug/IFS"
+
+
+
 
 MakeIntermediateDirs:
 	@test -d ../Builds || $(MakeDirCommand) ../Builds

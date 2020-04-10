@@ -14,10 +14,6 @@
  src/../headers/../Eigen/src/Core/GenericPacketMath.h \
  src/../headers/../Eigen/src/Core/MathFunctionsImpl.h \
  src/../headers/../Eigen/src/Core/arch/Default/ConjHelper.h \
- src/../headers/../Eigen/src/Core/arch/SSE/PacketMath.h \
- src/../headers/../Eigen/src/Core/arch/SSE/MathFunctions.h \
- src/../headers/../Eigen/src/Core/arch/SSE/Complex.h \
- src/../headers/../Eigen/src/Core/arch/SSE/TypeCasting.h \
  src/../headers/../Eigen/src/Core/arch/CUDA/Half.h \
  src/../headers/../Eigen/src/Core/arch/CUDA/PacketMathHalf.h \
  src/../headers/../Eigen/src/Core/arch/CUDA/TypeCasting.h \
@@ -127,7 +123,6 @@
  src/../headers/../Eigen/src/LU/PartialPivLU.h \
  src/../headers/../Eigen/src/LU/Determinant.h \
  src/../headers/../Eigen/src/LU/InverseImpl.h \
- src/../headers/../Eigen/src/LU/arch/Inverse_SSE.h \
  src/../headers/../Eigen/Geometry src/../headers/../Eigen/SVD \
  src/../headers/../Eigen/QR \
  src/../headers/../Eigen/src/QR/HouseholderQR.h \
@@ -153,7 +148,6 @@
  src/../headers/../Eigen/src/Geometry/ParametrizedLine.h \
  src/../headers/../Eigen/src/Geometry/AlignedBox.h \
  src/../headers/../Eigen/src/Geometry/Umeyama.h \
- src/../headers/../Eigen/src/Geometry/arch/Geometry_SSE.h \
  src/../headers/../Eigen/src/Eigenvalues/Tridiagonalization.h \
  src/../headers/../Eigen/src/Eigenvalues/RealSchur.h \
  src/../headers/../Eigen/src/Eigenvalues/./HessenbergDecomposition.h \
@@ -204,14 +198,6 @@ src/../headers/../Eigen/src/Core/GenericPacketMath.h:
 src/../headers/../Eigen/src/Core/MathFunctionsImpl.h:
 
 src/../headers/../Eigen/src/Core/arch/Default/ConjHelper.h:
-
-src/../headers/../Eigen/src/Core/arch/SSE/PacketMath.h:
-
-src/../headers/../Eigen/src/Core/arch/SSE/MathFunctions.h:
-
-src/../headers/../Eigen/src/Core/arch/SSE/Complex.h:
-
-src/../headers/../Eigen/src/Core/arch/SSE/TypeCasting.h:
 
 src/../headers/../Eigen/src/Core/arch/CUDA/Half.h:
 
@@ -435,8 +421,6 @@ src/../headers/../Eigen/src/LU/Determinant.h:
 
 src/../headers/../Eigen/src/LU/InverseImpl.h:
 
-src/../headers/../Eigen/src/LU/arch/Inverse_SSE.h:
-
 src/../headers/../Eigen/Geometry:
 
 src/../headers/../Eigen/SVD:
@@ -488,8 +472,6 @@ src/../headers/../Eigen/src/Geometry/ParametrizedLine.h:
 src/../headers/../Eigen/src/Geometry/AlignedBox.h:
 
 src/../headers/../Eigen/src/Geometry/Umeyama.h:
-
-src/../headers/../Eigen/src/Geometry/arch/Geometry_SSE.h:
 
 src/../headers/../Eigen/src/Eigenvalues/Tridiagonalization.h:
 
